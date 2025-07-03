@@ -80,6 +80,15 @@ chmod +x "$TEST_DIR/run_tests.sh"
 
 echo "🧪 Running tests..."
 
+# Check if maid is installed
+if ! command -v maid &> /dev/null; then
+    echo "❌ Error: maid command not found"
+    echo "Please install maid first or make sure it's in your PATH"
+    echo "You can build and install it with:"
+    echo "  cd /Users/user/c/maid && cargo build --release && cargo install --path ."
+    exit 1
+fi
+
 # Test 1: Basic clean
 echo "Test 1: Basic clean"
 cd "$TEST_DIR" && maid clean --verbose
@@ -99,3 +108,13 @@ cd "$TEST_DIR" && maid keep --verbose
 echo "✅ All tests completed successfully!"
 echo "🧹 Test directory: $TEST_DIR"
 echo "📝 You can inspect the results manually or delete with: rm -rf $TEST_DIR"
+
+# Add cleanup function
+cleanup() {
+    echo "🧹 Cleaning up test directory..."
+    rm -rf "$TEST_DIR"
+    echo "✅ Cleanup complete"
+}
+
+# Register cleanup function on script exit
+trap cleanup EXIT
