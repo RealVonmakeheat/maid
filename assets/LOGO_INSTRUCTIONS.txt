@@ -1,0 +1,10 @@
+Create a simple logo for the Maid CLI tool:
+
+1. Create a minimalist logo that represents cleaning/organizing files
+2. Use a broom or cleaning icon with a CLI/terminal theme
+3. Color scheme: blue and white, or a light purple theme
+4. Save as maid-logo.png in this directory
+5. Use a transparent background
+6. Make sure it looks good at small sizes (favicon) and larger sizes (website header)
+
+The logo should look professional and match the modern CLI tool aesthetic.
