@@ -19,15 +19,15 @@
 - [x] Add installer script
 
 ## Next Steps 🚀
-- [ ] Create GitHub repository at https://github.com/Realvonmakeheat/maid
-- [ ] Push code to GitHub:
+- [x] Create GitHub repository at https://github.com/Realvonmakeheat/maid
+- [x] Push code to GitHub:
   ```
   git remote add origin https://github.com/Realvonmakeheat/maid.git
   git branch -M main
   git push -u origin main
   ```
 - [ ] Create a real logo for assets/maid-logo.png
-- [ ] Create first GitHub release with version tag
+- [x] Create first GitHub release with version tag
 - [ ] Publish to crates.io:
   ```
   cargo login
