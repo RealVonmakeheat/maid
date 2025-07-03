@@ -61,6 +61,11 @@ maid keep --path /path/to/directory --verbose
 
 ## Installation
 
+### One-line installer
+```bash
+curl -sSL https://raw.githubusercontent.com/Realvonmakeheat/maid/main/install_maid.sh | bash
+```
+
 ### From crates.io (Coming Soon)
 ```bash
 cargo install maid-cli
